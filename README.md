@@ -1,11 +1,13 @@
 # Readme
 ​
 ## Overview
+As the COVID pandemic spreads, hospitals in NYC and other hotspots are getting overwhelmed. We are New York City based doctors and coders who are releasing this tool to help hospitals better manage the onslaught of patients they are seeing.
+
+We hope that using software to rapidly search hospital charts, display relevant data and risk stratify patients can be extremely valuable to hospitals as case numbers rise dramatically.
+
+Here we have provided software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users the clinical features of patients whose data reflects high risk of having a COVID-like illness or who have tested positive for COVID.
+
 __SmarterDx__ is a mid-revenue cycle company that uses software and machine learning to detect diagnoses based on clinical data for enhanced facility billing.
-
-While there is not enough data available to do true machine learning or AI for detecting COVID cases, we feel that using software to rapidly search hospital charts, display relevant data and risk stratify patients can still be extremely valuable to hospitals as case numbers rise dramatically.
-
-Here we have provided software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users patients whose data reflects high risk of having a COVID-like illness. In many places, testing is still taking several days, so while this certainly will not replace PCR testing, we hope it gives hospitals more information and a better visualization about their patients with potential COVID-like illnesses.
 
 ![](./SmarterDxCOVIDListView.png)
 ​
