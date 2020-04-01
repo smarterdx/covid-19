@@ -33,7 +33,7 @@ export default function CovidList(props) {
   suggestions = suggestions.filter((s) => {
     if(selectedFilter === 'all') return true
 
-    return s.covid_star === selectedFilter
+    return s.covid_stars === selectedFilter
   })
 
   return (
