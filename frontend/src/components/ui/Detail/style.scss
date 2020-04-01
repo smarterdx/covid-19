@@ -1,0 +1,14 @@
+@import '../../../index.scss';
+
+.detail {
+  color: $fontColorLightened;
+  font-size: $fontSizeSmall;
+  line-height: $lineHeightSmall;
+  .detail-label {
+    margin-right: $buffer;
+  }
+  .detail-value {
+    font-weight: $fontWeightHeavy;
+    color: $fontColorLightened;
+  }
+}

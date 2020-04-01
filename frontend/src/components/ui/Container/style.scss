@@ -1,0 +1,12 @@
+@import '../../../index.scss';
+
+.container {
+  @include size;
+
+  &.box {
+    padding: $buffer*8;
+    background-color: $bgColorLight;
+    border-radius: $radius;
+    @include shadow;
+  }
+}

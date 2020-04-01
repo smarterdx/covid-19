@@ -1,0 +1,10 @@
+@import '../../../index.scss';
+
+.org-logo {
+  padding: $buffer*2 0;
+  img {
+    max-height: calc(#{$headerHeight} - #{$buffer*4});
+    height: auto;
+    max-width: 260px;
+  }
+}

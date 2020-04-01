@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.interpreter {
+  textarea {
+    width: -webkit-fill-available;
+  }
+  .reset-link {
+    display: inline-block;
+    margin-bottom: $buffer*2;
+  }
+  .dx-list {
+    li {
+      background-color: $primaryColorLight;
+      color: $primaryColor;
+      cursor: default;
+      @include transition();
+      a {
+        opacity: 0;
+        font-size: $fontSizeSmall;
+        @include transition();
+      }
+      &:hover {
+        background-color: $primaryColor;
+        @include transition();
+        a {
+          opacity: 1;
+          @include transition();
+        }
+        * {
+          color: white;
+          @include transition();
+        }
+      }
+    }
+    &.rejected {
+      li {
+        background-color: $bgColor;
+        &:hover {
+          * {
+            color: $fontColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.interpretation-container {
+  @include box();
+  padding: $buffer*6 $buffer*8;
+
+  .highlighter-wrapper {
+    white-space: pre-wrap;
+    span {
+      line-height: 27px;
+    }
+  }
+}

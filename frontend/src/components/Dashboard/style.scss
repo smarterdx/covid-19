@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.dashboard {
+  margin-top: $buffer*4;
+  border-bottom: $border;
+  padding-bottom: $buffer*6;
+  .fun-fact {
+    border-radius: $radius;
+    padding: $buffer $buffer*4;
+    background-color: $bgColorLight;
+    @include shadow;
+    border: $border;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      margin-top: -35px;
+    }
+  }
+
+  .summary-stats {
+    .metric {
+      width: 100%;
+    }
+  }
+}

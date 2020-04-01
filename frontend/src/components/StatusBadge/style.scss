@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.status-container {
+  margin-bottom: $buffer*2;
+  color: $fontColorLightened;
+  .status-label {
+    margin-right: $buffer;
+  }
+
+  .status-value {
+    @include badge();
+    width: auto;
+    
+    &.new {
+      background-color: $primaryColorLight;
+      color: $primaryColor;
+    }
+    &.sent {
+      background-color: $pendingColorLight;
+      color: $pendingColor;
+    }
+    &.accepted {
+      background-color: $tertiaryColorLight;
+      color: $tertiaryColor;
+    }
+    &.declined {
+      background-color: $secondaryColorLight;
+      color: $secondaryColor;
+    }
+  }
+}

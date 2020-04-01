@@ -1,0 +1,10 @@
+@import '../../../index.scss';
+
+.line-chart {
+  .threshold-line {
+    line {
+      stroke: $secondaryColor;
+      // stroke-dasharray: 3;
+    }
+  }
+}

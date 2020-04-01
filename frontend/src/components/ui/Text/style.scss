@@ -1,0 +1,16 @@
+@import '../../../index.scss';
+
+p {
+  &.secondary {
+    color: $fontColorLightened;
+  }
+  &.primary {
+    color: $primaryColor;
+  }
+  &.section-title {
+    font-weight: $fontWeightHeavy;
+    font-size: $fontSizeLarge;
+    padding-bottom: $buffer;
+    margin-top: 0;
+  }
+}

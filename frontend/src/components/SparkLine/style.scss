@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.sparkline {
+  background-color: $bgColor;
+  // border: $border;
+  border-radius: $radius;
+  .sparkline-line {
+    stroke: $primaryColor;
+  }
+}

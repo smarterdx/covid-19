@@ -1,0 +1,19 @@
+@import '../../../index.scss';
+
+.results-block {
+  padding: $buffer*2;
+  background-color: $bgColor;
+
+  .title {
+    font-weight: $fontWeightHeavy;
+    color: $primaryColor;
+    margin: 0 0 $buffer*2 $buffer;
+  }
+  .results-date {
+    font-style: italic;
+    text-align: right;
+    font-size: $fontSizeSmall;
+    color: $fontColorLightened;
+    padding-right: $buffer;
+  }
+}

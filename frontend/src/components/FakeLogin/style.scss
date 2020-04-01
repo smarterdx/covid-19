@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.login {
+  position: relative;
+  background-color: $bgColorLight;
+  border-radius: $radius;
+  padding: $buffer*4 $buffer*8;
+  margin: $buffer*4 auto;
+  @include shadow;
+}

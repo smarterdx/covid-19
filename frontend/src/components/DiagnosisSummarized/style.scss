@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.diagnosis-summarized {
+  position: relative;
+  background-color: $bgColorLight;
+  border-radius: $radius;
+  padding: $buffer*4 $buffer*8;
+  margin: $buffer*4 auto;
+  border: $border;
+  @include shadow;
+
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .patient-name {
+    font-size: $fontSizeLarge;
+    font-weight: $fontWeightHeavy;
+    margin-bottom: $buffer;
+  }
+  .patient-icon {
+    margin-right: $buffer*2;
+  }
+
+  .diagnosis-name {
+    color: $primaryColor;
+    font-size: $fontSizeExtraLarge;
+    font-weight: $fontWeightHeavy;
+    margin-bottom: $buffer;
+  }
+
+  .summary-chart {
+    // background-color: $bgColor;
+    // padding: $buffer*2 $buffer*2 0 $buffer*2;
+    border-radius: $radius;
+    .summary-chart-title {
+      margin-bottom: $buffer*2;
+    }
+    .summary-chart-title-label {
+      font-size: $fontSizeSmall;
+      margin-right: $buffer;
+    }
+    .summary-chart-title-value {
+      // background-color: $primaryColorLight;
+      color: $primaryColor;
+      font-weight: $fontWeightHeavy;
+      // padding: $buffer;
+      // border-radius: $radius;
+      font-size: $fontSizeSmall;
+    }
+  }
+
+  .sparkline {
+    img {
+      width: 100%;
+    }
+  }
+}

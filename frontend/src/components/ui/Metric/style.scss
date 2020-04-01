@@ -1,0 +1,38 @@
+@import '../../../index.scss';
+
+.metric {
+  background-color: $primaryColor;
+  padding: $buffer*4;
+  border-radius: $radius;
+
+  &.secondary {
+    background: $bgColorLight;
+    border: $border;
+    .metric-value {
+      color: $primaryColor;
+    }
+    .metric-label {
+      color: $primaryColor;
+    }
+  }
+
+  .metric-value {
+    font-size: 26px;
+    color: $fontColorLight;
+    margin-bottom: $buffer*2;
+  }
+
+  .metric-label {
+    color: $fontColorLight;
+    opacity: .8;
+  }
+
+  .change {
+    margin-left: $buffer*2;
+    color: darken($tertiaryColor, 15%);
+
+    &.negative {
+      color: $secondaryColor;
+    }
+  }
+}

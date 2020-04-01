@@ -1,0 +1,7 @@
+@import '../../../index.scss';
+
+.page-content {
+  max-width: $maxPageWidth;
+  margin: $headerHeight auto 0 auto;
+  padding: $buffer*4;
+}

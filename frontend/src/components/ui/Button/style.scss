@@ -1,0 +1,64 @@
+@import '../../../index.scss';
+
+button {
+  background: $primaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: $radius;
+  padding: $buffer*2 $buffer*4;
+  color: $fontColorLight;
+  margin: $buffer 0;
+  display: flex;
+  align-items: center;
+  font-size: $fontSize;
+  justify-content: center;
+  cursor: pointer;
+  @include shadowPrimary;
+  @include transition;
+
+  &:hover {
+    background: $primaryColorInteracted;
+    border: 1px solid $primaryColorInteracted;
+    color: $fontColorLight;
+    @include transition;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3pt rgba($primaryColorLightened,.5);
+  }
+  &:active {
+    background-color: darken($primaryColor, 5%);
+    box-shadow: none;
+    outline: none;
+  }
+
+  &.secondary {
+    background: $bgColorLight;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    &:hover {
+      background: $primaryColorLightened;
+      border: 1px solid $primaryColorInteracted;
+    }
+    &:active {
+      background: darken($primaryColorLightened, 3%);
+    }
+  }
+
+  &.disabled {
+    opacity: .8;
+    pointer-events: none;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &.small {
+    padding: $buffer $buffer*2;
+    font-size: $fontSizeSmall;
+  }
+
+  &.no-border {
+    border: 1px solid transparent;
+  }
+}

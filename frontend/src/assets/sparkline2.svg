@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="45px" viewBox="0 0 137 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>sparkline2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6294256%" id="linearGradient-1">
+            <stop stop-color="#FFEBE5" offset="0%"></stop>
+            <stop stop-color="#FFF6F6" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="sparkline2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="20" width="137" height="25"></rect>
+        <path d="M-1,20.5 L137,20.5" id="Line-4" stroke="#FFC3B3" stroke-linecap="square" stroke-dasharray="4,4"></path>
+        <polyline id="Path" stroke="#4749A0" stroke-linecap="round" stroke-linejoin="round" points="0 34.6199489 27.1886677 33.5664562 45.0228056 27 63.1769248 31.1743069 76.3475284 39.2285163 101.513957 29.4133602 137 31.1743069"></polyline>
+    </g>
+</svg>

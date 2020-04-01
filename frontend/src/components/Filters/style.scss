@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.filters {
+  margin: $buffer*4 0;
+  a {
+    margin: 0 $buffer*2;
+    &.selected {
+      border-bottom: 1px solid $primaryColor;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import './styles/vars.scss';
+@import './styles/mixins.scss';
+@import './styles/keyframes.scss';
+
+* {
+  font-family: $fontFamily;
+}
+
+body {
+  background-color: $bgColorDarkened;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+h1,h2,h3,h4,h5,h6,p,div {
+  color: $fontColor;
+}
+
+a {
+  color: $primaryColor;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition;
+  &:hover {
+    color: $secondaryColor;
+    @include transition;
+  }
+
+  .icon {
+    top: 4px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-radius: $radius;
+    background-color: $bgColor;
+    border: 1px solid $bgColor;
+    padding: $buffer $buffer*2;
+    &:not(:last-child) {
+      margin-bottom: $buffer*2;
+    }
+  }
+}
+
+*::-webkit-scrollbar {
+    width: $buffer;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: $bgColorDarkened;
+    margin: $buffer;
+    border-radius: $radius;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $fontColorLightened;
+  border-radius: $radius;
+}
+
+.highlighter-term {
+  background-color: $primaryColorLight;
+  color: $primaryColor;
+  border-radius: $radius;
+  padding: 0 $buffer;
+  display: inline-block;
+  line-height: 24px;
+  &.active {
+    background-color: $primaryColor;
+    color: white;
+  }
+}

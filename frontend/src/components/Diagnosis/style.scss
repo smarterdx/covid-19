@@ -1,0 +1,261 @@
+@import '../../index.scss';
+
+.diagnosis.expanded {
+  position: relative;
+  background-color: $bgColorLight;
+  border-radius: $radius;
+  padding: $buffer*4 $buffer*8;
+  margin: $buffer*4 auto;
+  @include shadow;
+
+  .dx-metadata {
+    background-color: $bgColor;
+
+    ul li {
+      background-color: $primaryColorLight;
+      color: $primaryColor;
+    }
+  }
+
+  .action-container {
+    @include shadow;
+    padding: $buffer*4;
+    background-color: $bgColor;
+    border-radius: $radius;
+
+    .divider {
+      margin-top: $buffer*6;
+    }
+  }
+
+  .patient-name {
+    font-size: $fontSizeLarge;
+    font-weight: $fontWeightHeavy;
+    margin-bottom: $buffer*2;
+  }
+  .patient-icon {
+    margin-right: $buffer*2;
+  }
+
+  .diagnosis-name {
+    color: $primaryColor;
+    font-size: $fontSizeExtraLarge;
+    font-weight: $fontWeightHeavy;
+    margin-bottom: $buffer;
+  }
+  .diagnosis-reasoning {
+    background-color: $bgColorDarkened;
+    padding: $buffer $buffer*2;
+    border-radius: $radius;
+    display: inline-block;
+  }
+  .diagnosis-reasoning-icon {
+    margin-right: $buffer;
+    top: 1px;
+  }
+
+  .evidence-container {
+    background: $bgColor;
+    border-radius: $radius;
+    padding: $buffer*5;
+
+    .evidence-header {
+      margin-bottom: $buffer*2;
+      h3 {
+        margin: 0;
+        color: $primaryColor;
+        display: inline-block;
+        background: $primaryColorLight;
+        padding: $buffer $buffer*2;
+        border-radius: $radius;
+      }
+      p {
+        margin: 0;
+        font-style: italic;
+      }
+    }
+  }
+
+  .alt-diagnosis-title {
+    margin-top: $buffer;
+  }
+
+  .alt-diagnosis-list {
+    list-style-type: none;
+    margin: 0;
+    margin-top: $buffer*2;
+    padding: 0;
+    color: $fontColorLightened;
+
+    &.read-only {
+      li {
+        cursor: default;
+        padding: $buffer $buffer*2;
+        color: $fontColor;
+      }
+    }
+
+    li {
+      background-color: $bgColorDarkened;
+      border-radius: $radius;
+      padding: $buffer $buffer*4;
+      margin-bottom: $buffer*2;
+
+      a {
+        float: right;
+      }
+    }
+  }
+
+  .orders {
+    .icon {
+      color: $tertiaryColor;
+    }
+  }
+  margin-top: $buffer*8;
+  padding: $buffer*8;
+
+  ul {
+    max-width: 350px;
+    .icon-container {
+      width: 20px;
+    }
+    .list-item-container {
+      width: calc(100% - 20px);
+    }
+  }
+
+  h3 {
+    margin: $buffer 0;
+  }
+  h4 {
+    margin: $buffer 0;
+  }
+
+  .patient-details {
+    margin-bottom: $buffer*4;
+  }
+  .patient-avatar {
+    width: 130px;
+    margin-bottom: $buffer*2;
+    display: block;
+  }
+
+  .alt-diagnosis-list {
+    margin-bottom: $buffer*4;
+
+    .accept-reject {
+      width: 30px;
+    }
+
+    .alt-diagnosis {
+      width: calc(100% - 30px);
+      padding-left: $buffer;
+    }
+
+    li {
+      padding: $buffer;
+      cursor: pointer;
+      div {
+        @include transition;
+      }
+      &:hover {
+        div {
+          color: $primaryColor;
+          @include transition;
+        }
+        .accept-button {
+          color: $tertiaryColor;
+        }
+      }
+    }
+
+    a {
+      height: 24px;
+      width: 24px;
+      margin-right: $buffer;
+      border-radius: $radius;
+      background-color: $bgColorLight;
+
+      &:hover {
+        opacity: .7;
+      }
+
+      .icon {
+        top: 2px;
+      }
+
+      &.accept-button {
+        color: $stroke;
+        .icon {
+          left: 6px;
+        }
+        &.selected {
+          background-color: $tertiaryColor;
+          color: $fontColorLight;
+        }
+      }
+      &.add-button {
+        width: auto;
+        background-color: transparent;
+        .icon {
+          margin-right: 47px;
+          margin-left: $buffer;
+        }
+      }
+    }
+  }
+
+  .drg {
+    color: $primaryColor;
+    margin-bottom: $buffer*2;
+    border-radius: $radius;
+    .drg-code {
+      font-size: $fontSizeLarge;
+      padding: $buffer $buffer*1.5;
+      background-color: $primaryColorLight;
+      border-radius: $radius;
+      font-weight: $fontWeightHeavy;
+    }
+    .drg-descriptor {
+      color: $primaryColor;
+      margin-top: $buffer*2;
+    }
+  }
+
+  .orders, .hacs {
+    margin-bottom: $buffer*2;
+  }
+
+  .hacs {
+    .icon {
+      color: $secondaryColor;
+    }
+  }
+
+  .chart {
+    background-color: $bgColorDarkened;
+    border-radius: $radius;
+    padding: $buffer*8;
+    min-height: 200px;
+  }
+
+  .case-contact {
+    margin-top: $buffer*4;
+
+    .recipient-edit-icon {
+      top: 2px;
+    }
+
+    .editable-contact {
+      border: $border;
+      border-radius: $radius;
+      background-color: $bgColorLight;
+      padding: $buffer*2;
+    }
+  }
+
+  .status {
+    margin-bottom: $buffer*4;
+  }
+}

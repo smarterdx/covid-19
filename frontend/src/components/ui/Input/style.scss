@@ -1,0 +1,35 @@
+@import '../../../index.scss';
+
+.input {
+  input, textarea {
+    border-radius: $radius;
+    border: $border;
+    padding: $buffer*2 $buffer*4;
+    font-size: $fontSize;
+    @include transition;
+
+    &:focus {
+      outline: none;
+      border: $strokeWidth solid $primaryColor;
+      @include transition;
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    padding: $buffer*4;
+  }
+
+  &.with-icon {
+    position: relative;
+    .icon {
+      position: absolute;
+      top: 11px;
+      left: 12px;
+      color: $primaryColor;
+    }
+    input, &.with-icon textarea {
+      padding-left: $buffer*7;
+    }
+  }
+}

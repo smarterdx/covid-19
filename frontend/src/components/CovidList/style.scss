@@ -1,0 +1,8 @@
+@import '../../index.scss';
+
+.filters-container {
+  margin-top: $buffer*3;
+  .search-bar {
+    margin-right: $buffer*4;
+  }
+}

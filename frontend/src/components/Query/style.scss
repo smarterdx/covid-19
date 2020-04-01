@@ -1,0 +1,53 @@
+@import '../../index.scss';
+
+.query {
+  margin-top: $buffer*4;
+
+  .recipient-edit-icon {
+    top: 2px;
+    margin-left: $buffer*15;
+  }
+
+  .editable-contact {
+    border: $border;
+    padding: $buffer $buffer*2;
+    border-radius: $radius;
+    max-width: 200px;
+  }
+  .query-preview {
+    @include box();
+    max-width: 500px;
+    margin: 0 auto;
+    @include shadow;
+  }
+
+  .query-preview-content {
+    background-color: $bgColorLight;
+    padding: $buffer*4;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .cdi-note {
+    font-style: italic;
+    background-color: $bgColor;
+    border-radius: $radius;
+    padding: $buffer*4;
+  }
+
+  textarea {
+    width: 80%;
+    margin-bottom: $buffer*4;
+  }
+
+  .reject-all {
+    font-weight: $fontWeightHeavy;
+    margin-top: $buffer*4;
+    background-color: $bgColorDarkened;
+    padding: $buffer $buffer*2;
+    border-radius: $radius;
+    a {
+      font-weight: $fontWeightLight;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Color Palette
+$primaryColor: #4749A0;
+$primaryColorLightened: #8183c8;
+$primaryColorLight: #eeefff;
+$primaryColorInteracted: #37398c;
+$secondaryColor: #FF7F5C;
+$secondaryColorLight: #feeae4;
+$tertiaryColor: #72CEC1;
+$tertiaryColorLight: #ebfefb;
+$highlightColor: #FFD491;
+$pendingColor: #e09c04;
+$pendingColorLight: #faedd1;
+$successColor: $tertiaryColor;
+$errorColor: $secondaryColor;
+$errorColorLight: $secondaryColorLight;
+
+// Constants
+$bgColor: #F9FAFC;
+$bgColorDarkened: #f2f3f7;
+$bgColorLight: #ffffff;
+$buffer: 5px;
+$shadow: 0 4px 6px rgba($bgColor,.1), 0 2px 6px rgba(0,0,0,.08);
+$stroke: #e0e2ee;
+$strokeWidth: 1px;
+$border: $strokeWidth solid $stroke;
+$maxPageWidth: 1268px;
+$headerHeight: 80px;
+$radius: 4px;
+$timing: .15s;
+$easing: ease-in-out;
+
+// Typography
+$fontColor: #686977;
+$fontColorLightened: #9597ab;
+$fontColorLight: #ffffff;
+$fontWeightHeavy: 600;
+$fontWeightLight: 300;
+
+$fontFamily: 'Lexend Deca', sans-serif;
+
+$fontSize: 14px;
+$fontSizeLarge: 16px;
+$fontSizeExtraLarge: 18px;
+$fontSizeSmall: 12px;
+$fontSizeExtraSmall: 11px;
+$lineHeight: 24px;
+$lineHeightSmall: 18px;
+
+// Breakpoints
+$grid-horizontal-breakpoints: (
+  xs : 0,
+  sm : 576px,
+  md : 768px,
+  lg : 992px,
+  xl : $maxPageWidth,
+  xxl: 1700px
+);
+
+$sizes: (
+  1,2,3,4,5,6,7,8,9,10
+)

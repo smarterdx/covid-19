@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.quality-indicator-wrapper {
+  .quality-indicator {
+    margin: $buffer/2 $buffer $buffer/2 0;
+    width: fit-content;
+  }
+  .poa-icon {
+    color: $pendingColor;
+  }
+
+  &.revenue {
+    padding-right: $buffer;
+    margin-right: $buffer*2;
+    border-right: $border;
+    letter-spacing: 1.2px;
+    .quality-indicator {
+      background-color: $bgColorDarkened;
+      color: rgba(50,50,50,0.2);
+      .revenue-icon {
+        &.lit {
+          color: $tertiaryColor;
+          opacity: 1;
+        }
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+.query-cta {
+  width: 100%;
+
+  .query-accepted-rejected {
+    display: block;
+  }
+
+  .icon {
+    margin: 0 $buffer;
+  }
+  .accepted-icon {
+    color: $successColor;
+  }
+  .rejected-icon {
+    color: $errorColor;
+  }
+}

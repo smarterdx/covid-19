@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.star-rating {
+  .icon {
+    color: $bgColorDarkened;
+  }
+  &.rating-value-1 {
+    .icon {
+      &:nth-child(1) {
+        color: $pendingColor;
+      }
+    }
+  }
+  &.rating-value-2 {
+    .icon {
+      &:nth-child(-n+2) {
+        color: $pendingColor;
+      }
+    }
+  }
+  &.rating-value-3 {
+    .icon {
+      &:nth-child(-n+3) {
+        color: $pendingColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../index.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $headerHeight;
+  background-color: $bgColorLight;
+  @include shadow;
+
+  .header-content {
+    max-width: $maxPageWidth;
+    height: 100%;
+    margin: 0 auto;
+
+    @include media-breakpoint(xl) {
+      padding: 0 $buffer*4;
+    }
+
+    .org-logo {
+      border-right: $border;
+      padding-right: $buffer*4;
+
+//       img {
+//         height: 54px;
+//       }
+    }
+  }
+
+  .nav-link {
+    a {
+      color: $fontColor;
+      padding: $buffer $buffer*2;
+      border-radius: $radius;
+      &.selected {
+        color: $primaryColor;
+        background-color: $primaryColorLight;
+      }
+    }
+    &:hover {
+      a {
+        background-color: $bgColorDarkened;
+      }
+    }
+  }
+
+  .location-container {
+    border-right: $border;
+    padding-right: $buffer*5;
+  }
+
+  .location-picker-label {
+    margin-right: $buffer*2;
+  }
+
+  .header-user-icon {
+    top: 5px;
+    margin-right: $buffer*2;
+  }
+  .header-user-menu-icon {
+    color: $fontColorLightened;
+  }
+}

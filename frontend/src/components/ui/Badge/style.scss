@@ -1,0 +1,19 @@
+@import '../../../index.scss';
+
+.badge {
+  @include badge();
+  &.strong {
+    color: $fontColorLight;
+    background-color: $primaryColor;
+  }
+  &.light {
+    background-color: $bgColorDarkened;
+  }
+  &.extra-light {
+    background-color: $bgColorLight;
+  }
+  &.warning {
+    color: $errorColorLight;
+    background-color: $errorColor;
+  }
+}

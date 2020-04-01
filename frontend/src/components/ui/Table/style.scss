@@ -1,0 +1,21 @@
+@import '../../../index.scss';
+
+table {
+  text-align: left;
+  font-size: $fontSizeSmall;
+  width: 100%;
+  th {
+    @include uppercase;
+    color: $fontColorLightened;
+    font-weight: $fontWeightLight;
+  }
+  th, td {
+    border-bottom: $border;
+    padding: 0 $buffer;
+  }
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}

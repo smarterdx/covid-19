@@ -1,0 +1,17 @@
+@import '../../../index.scss';
+
+.icon {
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+
+  &.primary {
+    color: $primaryColor;
+  }
+  &.secondary {
+    color: $secondaryColor;
+  }
+  &.tertiary {
+    color: $tertiaryColor;
+  }
+}

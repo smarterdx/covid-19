@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+.query-success {
+  text-align: center;
+
+  .query-success-content {
+    animation: fadeIn 1s cubic-bezier(.87,-0.82,.27,1.72);
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .success-ctas {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .success-cta-icon {
+      margin: 0 $buffer;
+      top: 3px;
+    }
+  }
+}

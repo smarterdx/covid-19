@@ -1,0 +1,144 @@
+version: 2
+tables:
+- table:
+    schema: public
+    name: covid_criteria
+- table:
+    schema: public
+    name: covid_observations
+- table:
+    schema: public
+    name: covid_score
+- table:
+    schema: public
+    name: hospitalstay
+  object_relationships:
+  - name: covid_score
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: covid_score
+        column_mapping:
+          id: hospitalstay_id
+  array_relationships:
+  - name: covid_observations
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: covid_observations
+        column_mapping:
+          id: hospitalstay_id
+  - name: observation_aggregates
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: observation_aggregates
+        column_mapping:
+          id: hospitalstay_id
+  - name: observations
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: observation
+        column_mapping:
+          id: hospitalstay_id
+  - name: treatment_team_physicians
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: treatment_team_physicians
+        column_mapping:
+          id: hospitalstay_id
+- table:
+    schema: public
+    name: hospitalstay_base
+- table:
+    schema: public
+    name: observation
+  object_relationships:
+  - name: covid_score
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: covid_observations
+        column_mapping:
+          id: observation_id
+  insert_permissions:
+  - role: anyone
+    permission:
+      check:
+        id:
+          _eq: X-Hasura-User-Id
+      columns: []
+  select_permissions:
+  - role: anyone
+    permission:
+      columns: []
+      filter:
+        id:
+          _eq: 10
+- table:
+    schema: public
+    name: observation_aggregates
+- table:
+    schema: public
+    name: observation_base
+- table:
+    schema: public
+    name: observation_display_name
+- table:
+    schema: public
+    name: observation_name_map
+- table:
+    schema: public
+    name: patient
+  array_relationships:
+  - name: hospitalstays
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: hospitalstay
+        column_mapping:
+          hospital_id: id
+- table:
+    schema: public
+    name: patient_base
+- table:
+    schema: public
+    name: physician
+- table:
+    schema: public
+    name: physician_base
+- table:
+    schema: public
+    name: suggestion
+  object_relationships:
+  - name: hospitalstay
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: hospitalstay
+        column_mapping:
+          hospitalstay_id: id
+  - name: patient
+    using:
+      manual_configuration:
+        remote_table:
+          schema: public
+          name: patient
+        column_mapping:
+          patient_id: id
+- table:
+    schema: public
+    name: treatment_team
+- table:
+    schema: public
+    name: treatment_team_physicians

@@ -1,0 +1,73 @@
+@mixin test() {
+  border: 1px solid blue !important;
+}
+
+@mixin shadow() {
+  box-shadow: $shadow;
+}
+
+@mixin media-breakpoint($width) {
+  @media (max-width: map-get($grid-horizontal-breakpoints, $width)) { @content; }
+}
+
+@mixin transition {
+  transition: all $timing $easing;
+}
+
+@mixin ellipsis($width) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@mixin shadowSmall {
+  box-shadow: 0px 1px 8px 1px rgba(69, 65, 78, 0.15);
+}
+
+@mixin shadowPrimary {
+  box-shadow: 0px 1px 15px 1px rgba($primaryColor,0.15);
+}
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin box() {
+  background-color: $bgColor;
+  border-radius: $radius;
+  padding: $buffer*12;
+}
+
+@mixin badge() {
+  padding: $buffer/2 $buffer;
+  border-radius: $radius;
+  color: $primaryColor;
+  background-color: $primaryColorLight;
+}
+
+@mixin size() {
+  @each $size in $sizes {
+    &.mb-#{$size} {
+      margin-bottom: $size * $buffer*2;
+    }
+    &.mt-#{$size} {
+      margin-top: $size * $buffer*2;
+    }
+    &.ml-#{$size} {
+      margin-left: $size * $buffer*2;
+    }
+    &.mr-#{$size} {
+      margin-right: $size * $buffer*2;
+    }
+  }
+}
