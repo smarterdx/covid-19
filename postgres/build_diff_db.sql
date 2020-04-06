@@ -4,5 +4,4 @@ drop database if exists covid_diff;
 create database covid_diff;
 \c covid_diff
 
-\ir schemas/tables.sql
 \ir index.sql
