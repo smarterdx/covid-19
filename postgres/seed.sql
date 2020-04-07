@@ -370,7 +370,7 @@ COPY public.treatment_team (id, hospitalstay_id, physician_id, start_time, end_t
 18	17	1	\N	\N
 \.
 
-SELECT setval('patient_base_id_seq', (SELECT MAX(id) FROM patient_base));
-SELECT setval('observation_base_id_seq', (SELECT MAX(id) FROM observation_base));
-SELECT setval('physician_base_id_seq', (SELECT MAX(id) FROM physician_base));
-SELECT setval('hospitalstay_base_id_seq', (SELECT MAX(id) FROM hospitalstay_base));
+SELECT setval('patient_base_id_seq', (SELECT MAX(id) FROM public.patient_base));
+SELECT setval('observation_base_id_seq', (SELECT MAX(id) FROM public.observation_base));
+SELECT setval('physician_base_id_seq', (SELECT MAX(id) FROM public.physician_base));
+SELECT setval('hospitalstay_base_id_seq', (SELECT MAX(id) FROM public.hospitalstay_base));
