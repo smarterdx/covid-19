@@ -1,4 +1,4 @@
-# Readme
+# Covid-19 Diagnosis Dashboard
 ​
 ## Overview
 As the COVID pandemic spreads, hospitals in NYC and other hotspots are getting overwhelmed. We are New York City based doctors and coders who are releasing this tool to help hospitals better manage the onslaught of patients they are seeing.
@@ -14,6 +14,8 @@ __SmarterDx__ is a mid-revenue cycle company that uses software and machine lear
 Running `docker-compose up` will build a postgres database that uses a foreign data wrapper to connect to your clinical data. It will populate Hasura relationships that are used by the frontend for keeping the data up to date. And it will build the React frontend.
 
 This software is not meant to detect, manage or treat any diagnosis, patient or condition, but may be a useful adjunct tool for hospitals to be able to centrally review patient details, detect trends and manage resources. We make no warranty on its usefulness or accuracy.
+
+we’ve also included a [provider documentation cheatsheet](./provider_tips.pdf). from our partners at Enjoin.
 ​
 ## Future Development
 We'd love to have community support in helping make this more useful for hospitals, either by contributing to our roadmap or be contributing your own ideas. We'd especially love to hear feedback from hospitals that implement this.
