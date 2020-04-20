@@ -12,13 +12,13 @@ We have provided free-to-use software which can be deployed on a hospital server
 
 Please note that multiple configurations are possible depending on your hospital's needs and we are happy to share our experiences.
 
-__Of note, Hospitals are making record investments to expand ICUs and obtain supplies__.
+__We offer this free software because hospitals are making record operating and capital investments to train staff, expand ICUs, and obtain supplies__.
 
-Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf).
+It will be important for hospitals to recover their revenue after this crisis. Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf).
 
-Additionally, our partners at [Enjoin](http://www.enjoincdi.com) have released a [provider documentation tipcard](./provider_tips.pdf). Enjoin is a physician-directed clinical documentation integrity company that focuses on advanced clinical documentation practices to drive revenue integrity, compliance and translation of care.
+Our partners at [Enjoin](http://www.enjoincdi.com) have released a helpful [provider documentation tipcard](./provider_tips.pdf). Enjoin is a physician-directed clinical documentation integrity company that focuses on advanced clinical documentation practices to drive revenue integrity, compliance and translation of care.
 
-Please reach out personally at josh (at) smarterdx.com for any help with configuring this software or if you are interested in speaking with us further.
+__Please reach out to us personally at josh (at) smarterdx.com for any help with configuring the Covid-19 Clinical Decision Support Platform or if you are interested in speaking with us further.__
 
 ![](./SmarterDxCOVIDListView.png)
 ​
