@@ -6,13 +6,17 @@ __SmarterDx__ was founded by NYC physicians and data scientists. We provide oper
 
 The COVID pandemic will have two phases: an initial peak that overwhelms hospitals and a long right tail in which effective and systematic screening is paramount.
 
-This tool is designed to help hospitals first manage the onslaught of patients they are seeing, and secondly will help hospitals identify patients who need screening. It derives from our experiences as front-line physicians and from published data, and helps the hospital user rapidly search hospital charts, display relevant data, and risk stratify patients.
+This tool is designed to help hospitals manage the onslaught of patients they are seeing during the initial peak, and then will help hospitals ensure systematic screening during the right tail. It helps the hospital user rapidly search hospital charts, display relevant data, and risk stratify patients.
 
-We have provided software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users the clinical features of patients whose data reflects high risk of having a COVID-like illness.
+We have provided free-to-use software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users the clinical features of patients whose data reflects high risk of having a COVID-like illness.
 
 Please note that multiple configurations are possible depending on your hospital's needs and we are happy to share our experiences.
 
-__Of note, hospitals are making record investments to expand ICUs and obtain supplies__. Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additionally, our partners at [Enjoin](http://www.enjoincdi.com) have released a [provider documentation tipcard](./provider_tips.pdf).
+__Of note, Hospitals are making record investments to expand ICUs and obtain supplies__.
+
+Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf)
+
+Additionally, our partners at [Enjoin](http://www.enjoincdi.com) have released a [provider documentation tipcard](./provider_tips.pdf). Enjoin is a physician-directed clinical documentation integrity company that focuses on advanced clinical documentation practices to drive revenue integrity, compliance and translation of care.
 
 Please reach out personally at josh (at) smarterdx.com for any help with configuring this software or if you are interested in speaking with us further.
 
