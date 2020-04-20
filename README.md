@@ -1,21 +1,26 @@
-# Covid-19 Diagnosis Dashboard
+# Covid-19 Clinical Decision Support Platform
 ​
 ## Overview
-As the COVID pandemic spreads, hospitals in NYC and other hotspots are getting overwhelmed. We are New York City based doctors and coders who are releasing this tool to help hospitals better manage the onslaught of patients they are seeing.
 
-We hope that using software to rapidly search hospital charts, display relevant data and risk stratify patients can be extremely valuable to hospitals as case numbers rise dramatically.
+__SmarterDx__ was founded by NYC physicians and data scientists. We provide operational clarity by using machine learning to catalog patient diagnoses and comorbidities directly from EMR data, allowing hospitals to build clinical pathways and submit accurate and complete claims.
 
-Here we have provided software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users the clinical features of patients whose data reflects high risk of having a COVID-like illness or who have tested positive for COVID.
+The COVID pandemic will have two phases: an initial peak that overwhelms hospitals and a long right tail in which effective and systematic screening is paramount.
 
-__SmarterDx__ is a mid-revenue cycle company that uses software and machine learning to detect diagnoses based on clinical data for enhanced facility billing.
+This tool is designed to help hospitals first manage the onslaught of patients they are seeing, and secondly will help hospitals identify patients who need screening. It derives from our experiences as front-line physicians and from published data, and helps the hospital user rapidly search hospital charts, display relevant data, and risk stratify patients.
+
+We have provided software which can be deployed on a hospital server and connected to a hospital's Clinical Data Warehouse. Once connected, it will show users the clinical features of patients whose data reflects high risk of having a COVID-like illness.
+
+Please note that multiple configurations are possible depending on your hospital's needs and we are happy to share our experiences.
+
+__Of note, hospitals are making record investments to expand ICUs and obtain supplies__. Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additionally, our partners at [Enjoin](http://www.enjoincdi.com) have released a [provider documentation tipcard](./provider_tips.pdf).
+
+Please reach out personally at josh (at) smarterdx.com for any help with configuring this software or if you are interested in speaking with us further.
 
 ![](./SmarterDxCOVIDListView.png)
 ​
 Running `docker-compose up` will build a postgres database that uses a foreign data wrapper to connect to your clinical data. It will populate Hasura relationships that are used by the frontend for keeping the data up to date. And it will build the React frontend.
 
 This software is not meant to detect, manage or treat any diagnosis, patient or condition, but may be a useful adjunct tool for hospitals to be able to centrally review patient details, detect trends and manage resources. We make no warranty on its usefulness or accuracy.
-
-we’ve also included a [provider documentation cheatsheet](./provider_tips.pdf). from our partners at Enjoin.
 ​
 ## Future Development
 We'd love to have community support in helping make this more useful for hospitals, either by contributing to our roadmap or be contributing your own ideas. We'd especially love to hear feedback from hospitals that implement this.
