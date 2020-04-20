@@ -12,7 +12,7 @@ We have provided free-to-use software which can be deployed on a hospital server
 
 Please note that multiple configurations are possible depending on your hospital's needs and we are happy to share our experiences.
 
-__We offer this free software because hospitals are making record operating and capital investments to train staff, expand ICUs, and obtain supplies__.
+__We offer this free software because hospitals are already straining their finances through record levels of operating and capital investments to train staff, expand ICUs, and obtain supplies__.
 
 It will be important for hospitals to recover their revenue after this crisis. Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf).
 
