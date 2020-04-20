@@ -14,7 +14,7 @@ Please note that multiple configurations are possible depending on your hospital
 
 __Of note, Hospitals are making record investments to expand ICUs and obtain supplies__.
 
-Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf)
+Our commercial software helps hospitals represent the full value of the care they deliver from a revenue and quality standpoint. Additional information about our CDI solution can be downloaded [here](./SmarterDx_CDI.pdf).
 
 Additionally, our partners at [Enjoin](http://www.enjoincdi.com) have released a [provider documentation tipcard](./provider_tips.pdf). Enjoin is a physician-directed clinical documentation integrity company that focuses on advanced clinical documentation practices to drive revenue integrity, compliance and translation of care.
 
